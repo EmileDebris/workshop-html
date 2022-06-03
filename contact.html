@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- FORMULAIRE HTML -->
+        <form action='#' method="post" name="/send_contact">
+            <fieldset>
+                <legend>Saisir les nom et prénoms</legend>
+                <label for="lastname">Nom :</label>
+                <input type="text" name="nomsaisie" id="lastname" required maxlength="70">
+                <label for="firstname">Prénom(s) :</label>
+                <input type="text" name="prenomsaisie" id="firstname" required maxlength="80">
+            </fieldset>
+            <fieldset>
+                <legend>Saisir l'adresse mail</legend>
+                <label for="email">Email :</label>
+                <input type="email" name="emailsaisie" id="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Saisir le numéro de téléphone</legend>
+                <label for="tel">Telephone :</label>
+                <input type="tel" name="telsaisie" id="tel" required>
+            </fieldset>
+            <fieldset>
+                <select id="chanel" size="5" >
+                    <option value="mail" selected>E-mail</option>
+                    <option value="telephone">Téléphone</option>
+                    <option value="pigeon">Pigeon voyageur</option>
+                    <option value="messager">Messager à cheval</option>
+                    <option value="telegrame">Telegrame</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message :</label>
+                <textarea name="maessagesaisie" id="message" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit">Envoi</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        <a href="index.html">Retour à l'accueil</a>
+    </body>
+</html>
