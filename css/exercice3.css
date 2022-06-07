@@ -1,0 +1,16 @@
+dt{
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+dd{
+    font-style: italic;
+}
+
+dl{
+    padding: 20px;
+}
+
+ol{
+    list-style-type: lower-greek;
+}
