@@ -3,13 +3,25 @@ h1{
     text-transform: uppercase;
 }
 
+h2:before{
+    content: counter(section) ". ";
+
+}
+
+
 h2{
     text-decoration: underline overline;
+    counter-increment: section;
+}
+
+h3:before{
+    content: "* ";
 }
 
 h3{
     font-style: italic;
 }
+
 
 p{
     margin-left: 50px;
