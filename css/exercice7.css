@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2:before{
+    content: counter(section) ". ";
+
+}
+
+
+h2{
+    text-decoration: underline overline;
+    counter-increment: section;
+}
+
+h3::before{
+    content: "* ";
+}
+
+h3{
+    font-style: italic;
+}
+
+
+p{
+    margin-left: 50px;
+    text-indent: -20px;
+}
+
+
+h2 + p[lang="fr"]::before{
+    color: grey;
+    font-size: smaller;
+    font-variant: small-caps;
+    content: "Français";
+    display:block;
+}
+
+p[lang="la"]::before{
+    font-size: smaller;
+    color: grey;
+    font-variant: small-caps;
+    content: "Latin";
+    display: block;
+}
+
+
+h2 + p::first-line{
+    font-variant: small-caps;
+}
+
+h2 + p span{
+    font-variant: small-caps;
+}
+
+p::first-letter{
+    font-size: 20em;
+}
