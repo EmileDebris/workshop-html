@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2:before{
+    content: counter(section) ". ";
+
+}
+
+
+h2{
+    text-decoration: underline overline;
+    counter-increment: section;
+}
+
+h3:before{
+    content: "* ";
+}
+
+h3, ul li{
+    font-style: italic;
+}
+
+
+p{
+    margin-left: 50px;
+    text-indent: -20px;
+}
+
+ul{
+    list-style-type: "* ";
+}
+
+a,  a:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+
+a:focus, a:hover{
+    text-decoration: underline;
+}
+
+article a{
+    padding: 100px;
+}
