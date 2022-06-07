@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    text-decoration: underline overline;
+}
+
+h3{
+    font-style: italic;
+}
+
+p{
+    margin-left: 50px;
+    text-indent: -20px;
+}
