@@ -30,6 +30,46 @@
 				</ul>
 			</div>
 		</nav>
+
+        <div class="container-fluid">
+            <form method="post" action="#">
+                <div class="row justify-content-end" style="margin-top:10px">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary form-control">Ajouter un nouveau collaborateur</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:10px; margin-left:15px">
+                    <h1>Les collaborateurs</h1>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="nomCollab" class="float-right">Rechercher un nom ou un prénom qui commence par :</label>
+                    </div>
+                    <div class="col-2">
+                        <input class="form-control" type="text" name="nomCollab" id="nomCollab"/>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success form-control">Rechercher</button>
+                    </div>
+                    <div class="col-5 text-center">
+                        <input type="checkbox" id="collDesactives" name="collDesactives">
+                        <label for="collDesactives">Voir les collaborateurs désactivés</label>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px">
+                    <div class="col-3">
+                        <label for="dpt" class="float-right">Filtrer par département :</label>
+                    </div>
+                    <div class="col-2">
+                        <select class="form-control" id="dpt">
+                            <option value="compta">Comptabilité</option>
+                            <option value="rh">Ressources Humaines</option>
+                            <option value="info">Informatique</option>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
 		<!-- Fin du MENU PRINCIPAL -->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
