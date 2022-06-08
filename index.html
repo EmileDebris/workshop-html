@@ -30,12 +30,14 @@
 				</ul>
 			</div>
 		</nav>
+        <!-- Fin menu principal -->
 
+        <!-- Formulaire de recherche -->
         <div class="container-fluid">
-            <form method="post" action="#">
+            <form method="get" action="#">
                 <div class="row justify-content-end" style="margin-top:10px">
                     <div class="col-4">
-                        <button type="button" class="btn btn-primary form-control">Ajouter un nouveau collaborateur</button>
+                        <a class="btn btn-primary form-control" href="creer.html" role="button" type="submit">Ajouter un nouveau collaborateur</a>
                     </div>
                 </div>
                 <div class="row" style="margin-bottom:10px; margin-left:15px">
@@ -70,6 +72,9 @@
                 </div>
             </form>
         </div>
+        <!-- Fin de recherche -->
+
+        <!-- Affichage collaborateurs -->
         <div class="container-fluid">
             <div class="row" style="margin-top:50px">
                 <div class="col-4">
@@ -345,11 +350,9 @@
                 </div>
             </div>
         </div>
-        
-		<!-- Fin du MENU PRINCIPAL -->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- fin collaborateurs -->
 
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-slim.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>    
