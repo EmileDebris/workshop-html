@@ -123,7 +123,9 @@
 									<input class="form-control" type="text" name="recherche" id="recherche" />
 								</div>
 								<div class="form-group">
-									<button type="button" class="btn-success form-control">Rechercher</button>
+									<button type="button" class="btn-success form-control" data-toggle="modal" data-target="#myModal">
+										Rechercher
+									</button>
 								</div>
 							</form>
 						</div>
@@ -144,7 +146,7 @@
 									<input class="form-control" type="text" name="pseudo" id="pseudo" />
 								</div>
 								<div class="form-group text-secondary">
-									<label for="message">Message : </label>
+									<label for="memo">Message : </label>
 									<textarea class="form-control" name="memo" rows="5" cols="30">Tapez votre message ici</textarea>
 								</div>
 								<div class="form-group">
@@ -190,6 +192,32 @@
 			&copy; 2018 - Vous pouvez maintenant prendre exemple !
 		</div>
 		<!-- Fin PIED DE PAGE -->
+
+		<!-- Une boite de dialogue -->
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Recherche indisponible</h4>
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						Le module de recherche est actuellement H.S. veuillez réessayer plus tard :-/
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Fin boite de dialogue -->
 
 		<!-- Script JS de BootStrap 4-->
 		<script src="js/jquery-slim.min.js"></script>
